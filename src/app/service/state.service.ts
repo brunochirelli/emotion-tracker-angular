@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { Event } from '../types/event.type';
 
 @Injectable({
