@@ -1,0 +1,31 @@
+<h2>Events</h2>
+<button>New Emotion Analysis</button>
+
+<ul>
+  <li *ngFor="let event of rpd">
+    <ul>
+      <li>
+        <h4>Event</h4>
+        <p>{{ event.event }}</p>
+        <p>{{ event.date }}</p>
+      </li>
+      <li>
+        <h4>Emotions</h4>
+        <ul>
+          <li *ngFor="let emotion of event.emotions">
+            <p>{{ emotion.name }}</p>
+            <p>{{ emotion.percentage }}</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h4>Automatic Reaction</h4>
+        <p>{{ event.reaction }}</p>
+      </li>
+      <li>
+        <h4>Rule</h4>
+        <p>{{ event.rule }}</p>
+      </li>
+    </ul>
+  </li>
+</ul>
