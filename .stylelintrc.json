@@ -1,9 +1,11 @@
 {
+  "customSyntax": "postcss-scss",
   "extends": [
     "stylelint-config-standard",
     "stylelint-config-idiomatic-order"
   ],
   "plugins": [
+    "stylelint-scss",
     "stylelint-order"
   ],
   "rules": {
