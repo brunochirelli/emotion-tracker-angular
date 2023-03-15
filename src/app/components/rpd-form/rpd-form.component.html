@@ -1,0 +1,44 @@
+<form #rpdForm="ngForm" (ngSubmit)="saveEvent(rpdForm.value)">
+  <label class="d-block">
+    <div>Acontecimento</div>
+    <input
+      [(ngModel)]="event"
+      name="event"
+      type="textarea"
+      placeholder="Enter your text here"
+    />
+  </label>
+
+  <label class="d-block">
+    <div>Emoções</div>
+    <input
+      [(ngModel)]="emotion"
+      name="emotion"
+      type="text"
+      placeholder="Enter your text here"
+    />
+    <button>Add more emotions</button>
+  </label>
+
+  <label class="d-block">
+    <div>Reação automática</div>
+    <input
+      [(ngModel)]="reaction"
+      name="reaction"
+      type="textarea"
+      placeholder="Enter your text here"
+    />
+  </label>
+
+  <label class="d-block">
+    <div>Regra</div>
+    <input
+      [(ngModel)]="rule"
+      name="rule"
+      type="textarea"
+      placeholder="Enter your text here"
+    />
+  </label>
+
+  <button type="submit">Salvar</button>
+</form>
